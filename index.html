@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sally McDab's Bio</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            border: 2px solid #4CAF50;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+            text-shadow: 2px 2px #8BC34A;
+        }
+        p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #FF5722;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #2196F3;
+            display: inline-block;
+            margin: 10px;
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #FFC107;
+            display: inline-block;
+            margin: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #3F51B5;
+            color: white;
+            border-radius: 0 0 12px 12px;
+        }
+        .dog-photos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .dog-photos img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .qr-code {
+            display: none;
+            margin: 20px auto;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function showQRCode() {
+            document.getElementById('qrCode').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>About Sally McDab</h1>
+        <p>Hello! My name is Sally McDab. I live in the vibrant city of New York.</p>
+        <p>I am a proud owner of 5 adorable pet dogs. They bring joy and energy to my life every day.</p>
+        <div class="dog-photos">
+            <img src="puppy_photo.jpg" alt="Dog 1">
+            <img src="https://placekitten.com/101/100" alt="Dog 2">
+            <img src="https://placekitten.com/102/100" alt="Dog 3">
+            <img src="https://placekitten.com/103/100" alt="Dog 4">
+            <img src="https://placekitten.com/104/100" alt="Dog 5">
+        </div>
+        <div>
+            <div class="circle"></div>
+            <div class="square"></div>
+            <div class="triangle"></div>
+        </div>
+        <button onclick="showQRCode()">Show QR Code</button>
+        <div id="qrCode" class="qr-code">
+            <img src="https://www.qr-code-generator.com/wp-content/themes/qr/img_v1.5/generator/preview/qrcode.svg" alt="QR Code">
+        </div>
+    </div>
+    <div class="footer">
+        <p>Thank you for visiting!</p>
+    </div>
+</body>
+</html>
